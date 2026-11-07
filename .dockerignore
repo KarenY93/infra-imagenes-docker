@@ -1,0 +1,14 @@
+# Entornos virtuales
+venv/
+.venv/
+
+# Caché de Python 
+**/__pycache__
+**/*.pyc
+
+# Historial de git
+.git/
+
+# No hace falta que viajen a la imagen
+Dockerfile
+.dockerignore
