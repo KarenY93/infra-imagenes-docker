@@ -7,7 +7,7 @@ WORKDIR /app
 COPY app/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Usuario sin privilegios (después del pip, antes del código)
+# Usuario sin privilegios 
 RUN useradd --create-home --shell /bin/bash servicio
 
 # Después el código, que es lo que más cambia
