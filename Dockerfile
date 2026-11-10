@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY servidor.py .
+COPY app.py .
 
 RUN useradd --create-home --shell /bin/bash servicio
 
